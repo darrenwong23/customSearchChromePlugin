@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+
+    "name": "The Lazy Programmer's Google Search Helper",
+    "description": "Adds (the programming language of choice) search term to searches entered in address bar",
+    "version": "1.0",
+"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+        "permissions": ["tabs", 
+                        "http://*/*", "https://*/*",
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],  
+    
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "CLICK HERE"
+    }, "commands": {
+     "_execute_browser_action": {
+            "suggested_key": {
+              "mac": "Command+ Shift+K"
+
+            }
+    }
+  }
+
+
+}
+
+/*
+
+"chrome_settings_overrides": {
+    
+        "search_url": "www.google.com/"
+    }, */
